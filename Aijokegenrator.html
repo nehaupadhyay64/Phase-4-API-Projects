@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joke Generator</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #3494E6, #EC6EAD);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .joke-container {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 60%;
+      width: 500px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #promptInput {
+      width: 100%;
+      padding: 8px 10px;
+      border: 2px solid #171616;
+      border-radius: 8px;
+      font-size: 1.3em;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    #promptInput::placeholder {
+      font-size: 0.9em;
+    }
+
+    #generateBtn {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #FF4848;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.4em;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      margin-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    #generateBtn:hover {
+      background-color: #FF6565;
+    }
+
+    #jokeText {
+      margin-top: 20px;
+      font-size: 1.4em;
+      color: #555;
+      min-height: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .joke-container {
+        width: 90%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="joke-container">
+      <h1>Joke Generator</h1>
+      <input type="text" id="promptInput" placeholder="Enter your prompt" />
+      <br />
+      <button id="generateBtn">Generate Joke</button>
+      <p id="jokeText">Your joke will appear here...</p>
+    </div>
+  </div>
+
+  <script src="Aijokegenrator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="gemini-ai-tool.css">
+</head>
+<body>
+    <h1>AI-Powered Content Generator</h1>
+
+<div class="container">    
+<div class="box">
+    <h2>Ask Me Anything</h2>
+    <input type="text" id="question" placeholder="Ask a question..."/>
+    <button onclick="askQuestion()">Ask</button>
+    <div id="answer"></div>
+</div>
+
+<div class="box">
+    <h2>Quick Summarizer</h2>
+    <textarea id="textToSummarize" placeholder="Paste text here..."></textarea>
+    <button onclick="summarizeText()">Summarize</button>
+    <div id="summary"></div>
+</div>
+
+<div class="box">
+    <h2>Idea Spark</h2>
+    <input type="text" id="ideaPrompt" placeholder="Enter idea prompt..."/>
+    <button onclick="generateIdeas()">Get Ideas</button>
+    <div id="ideas"></div>
+</div>
+
+<div class="box">
+    <h2>Defination Finder</h2>
+     <input type="text" id="term" placeholder="Enter term..."/>
+     <button onclick="findDefination()">Define</button>
+     <div id="defination"></div>
+</div>
+</div>
+
+<script src="gemini-ai-tool.js"></script>
+</body>
+</html>
